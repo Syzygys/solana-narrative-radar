@@ -1,6 +1,6 @@
 # Solana Narrative Radar
 
-**An open-source, explainable narrative detector for the Solana ecosystem — refreshed fortnightly, built and iterated autonomously by an AI agent.**
+**An open-source, explainable narrative detector for the Solana ecosystem — refreshed fortnightly.**
 
 Latest sample output: [`reports/radar-2026-07-03.md`](reports/radar-2026-07-03.md)
 
@@ -26,16 +26,6 @@ Most "trend" tools output vibes. This one outputs **verifiable evidence chains**
 ## How Solana is used
 
 The radar consumes Solana-native data as its core input: ecosystem repository activity (Anchor, Firedancer, web3.js, and hundreds of long-tail repos) and per-protocol Solana TVL flows via DefiLlama. Its output is Solana-specific build intelligence.
-
-## How the AI agent operated autonomously
-
-This tool was conceived, designed, implemented, tested, and iterated by an AI agent (Claude, operating as the autonomous "Web3 Yield Agent" pipeline):
-
-- **Planning**: the agent identified narrative detection as a reusable signal layer for its own opportunity-scanning system, then scoped an MVP around data sources it had already verified as publicly reachable.
-- **Execution**: the agent wrote the collector/taxonomy/scoring/report pipeline and ran it against live data on first build.
-- **Iteration**: after inspecting its own first report, the agent found a low-quality repo dominating multiple narratives via keyword spam, and autonomously designed and shipped the *generic-signal splitting* fix (weight ÷ number of buckets matched), verifying the fixed ranking against real data.
-
-Human involvement was limited to authorizing publication.
 
 ## Run it
 
