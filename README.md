@@ -1,5 +1,7 @@
 # Solana Narrative Radar
 
+[![Refresh Solana Narrative Radar](https://github.com/Syzygys/solana-narrative-radar/actions/workflows/radar.yml/badge.svg)](https://github.com/Syzygys/solana-narrative-radar/actions/workflows/radar.yml)
+
 **An open-source, explainable narrative detector for the Solana ecosystem — refreshed fortnightly.**
 
 Latest sample output: [`reports/radar-2026-07-03.md`](reports/radar-2026-07-03.md)
@@ -32,7 +34,7 @@ The radar consumes Solana-native data as its core input: ecosystem repository ac
 ```bash
 pip install -r requirements.txt
 # optional but recommended (higher GitHub rate limits):
-export GITHUB_TOKEN=ghp_...
+export GITHUB_TOKEN=<token>
 python src/radar.py --days 14 --out reports/
 ```
 
@@ -41,6 +43,9 @@ Output: `reports/radar-<date>.md`. Schedule it fortnightly with cron / Task Sche
 ```
 0 9 1,15 * *  cd /path/to/repo && python src/radar.py
 ```
+
+This repository now includes a GitHub Actions workflow that refreshes reports on the
+1st and 15th of each month, with manual `workflow_dispatch` support for ad hoc runs.
 
 ## Design principles
 
